@@ -1,7 +1,7 @@
 // Password variables
 
 const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const lower = "abcdefghijklmnopqrstuvwxyz";
+const base = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*_-+=";
 
@@ -10,7 +10,6 @@ const passwordTxt = document.getElementById("password");
 const length = document.getElementById("length");
 const incNumbers = document.getElementById("numbers");
 const incSymbols = document.getElementById("symbols");
-const inclower = document.getElementById("lower");
 const incupper = document.getElementById("upper");
 
 
@@ -20,14 +19,18 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 const writePassword = (length,characters) => {
-
   var password = "";
-  var passwordText = document.querySelector("#password");
+  for (let i = 0; i <length; i++) {
+    password += characters.charAt(
+      math.floor(math.random()*characters.length)
+    )
+  }
 
-  passwordText.value = password;
+
   
-
-
+  
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
 }
 
 // Add event listener to generate button
