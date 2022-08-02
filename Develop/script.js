@@ -19,11 +19,9 @@ const incupper = document.getElementById("upper");
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
-  
+const writePassword = (length,characters) => {
 
-
-  var password = generatePassword();
+  var password = "";
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
