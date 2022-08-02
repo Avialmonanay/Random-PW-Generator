@@ -6,7 +6,7 @@ const numbers = "0123456789";
 const symbols = "!@#$%^&*_-+=";
 
 
-const passwordTxt = document.getElementById("password");
+const passwordText = document.getElementById("password");
 const length = document.getElementById("length");
 const incNumbers = document.getElementById("numbers");
 const incSymbols = document.getElementById("symbols");
@@ -19,17 +19,21 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 const writePassword = (length,characters) => {
+  
   var password = "";
   for (let i = 0; i <length; i++) {
-    password += characters.charAt(math.floor(math.random()*characters.length));
+    password += characters.charAt (Math.floor(Math.random() * characters.length));
   };
+  
   passwordText.value = password;
-  console.log = Password
+  console.log(password)
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", () =>{ 
 var characters = base;
 incNumbers.checked ? (characters += numbers) : "";
 incUpper.checked ? (characters += upper) : "";
 incNumbers.checked ? (characters += symbols) : "";
+passwordText.value = writePassword(length.value, characters);
+});
