@@ -1,14 +1,28 @@
+// Password variables
+
+const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lower = "abcdefghijklmnopqrstuvwxyz";
+const numbers = "0123456789";
+const symbols = "!@#$%^&*_-+=";
+
+
+const passwordTxt = document.getElementById("password");
+const length = document.getElementById("length");
+const incNumbers = document.getElementById("numbers");
+const incSymbols = document.getElementById("symbols");
+const inclower = document.getElementById("lower");
+const incupper = document.getElementById("upper");
+
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var length = prompt("Choose password length between 8 and 128")
-
-  console.log ("Generate Button Selected.")
-  console.log (length)
-  console.log (password)
   
+
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
