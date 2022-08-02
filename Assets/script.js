@@ -13,6 +13,7 @@ const length = document.getElementById("length");
 const incNumbers = document.getElementById("numbers");
 const incSymbols = document.getElementById("symbols");
 const incUpper = document.getElementById("upper");
+const copyBtn = document.getElementById("copy");
 var generateBtn = document.querySelector("#generate");
 
 
@@ -36,3 +37,11 @@ incUpper.checked ? (characters += upper) : "";
 incNumbers.checked ? (characters += symbols) : "";
 passwordText.value = writePassword(length.value, characters);
 });
+
+// Event Listener for Copy button.
+copyBtn.addEventListener("click", () => {
+  passwordText.select();
+  document.execCommand("copy");
+  alert("Password Copied");
+});
+
