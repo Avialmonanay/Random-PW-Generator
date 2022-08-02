@@ -1,23 +1,23 @@
-// Password variables
-
-const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// Password variables set in a string base is the defualt and always selected.
 const base = "abcdefghijklmnopqrstuvwxyz";
+const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*_-+=";
 
 
+
+
+// Id's that are pulled from the HTML and made available to JS
 const passwordText = document.getElementById("password");
 const length = document.getElementById("length");
 const incNumbers = document.getElementById("numbers");
 const incSymbols = document.getElementById("symbols");
 const incUpper = document.getElementById("upper");
-
-
-
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+
+
+// generate password based on random math and allowed charectars - Write password to the #password input
 const writePassword = (length,characters) => {
   
   var password = "";
@@ -25,11 +25,10 @@ const writePassword = (length,characters) => {
     password += characters.charAt (Math.floor(Math.random() * characters.length));
   };
   return password;
-  passwordText.value = password;
-  console.log(password)
+
 }
 
-// Add event listener to generate button
+// Event Listener for Generate Button. Takes into account checked boxes and adds their strings as values to the base string.
 generateBtn.addEventListener("click", () =>{ 
 var characters = base;
 incNumbers.checked ? (characters += numbers) : "";
