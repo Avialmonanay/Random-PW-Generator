@@ -14,6 +14,7 @@ The first size is simple, easy to follow, and does not overcrowd the user with o
 ![large screen format display](./Assets/Application%20Capture/Large%20screen%20format.PNG)
 
 The second size is formatted for mobile devices. It features large buttons for easy touch compatability but does not require the user to scroll to be able to see all of their options. CSS media functions allow for very small resolutions providing any user access to its functions. This design makes for a quick and intuitive user experience.
+
 ![mobile screen format display](./Assets/Application%20Capture/Mobile%20Device%20Format.PNG)
 
 
