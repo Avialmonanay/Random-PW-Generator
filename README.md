@@ -3,7 +3,7 @@
 
 This application is a random password generator that uses a users preferences and random math to generate a secure password.
 
-The base level of the password will provide a password containing 20 charectars with a mix of lowercase, uppercase, numbers, and symbols. The user then has the option to adjust the length between 8 and 128 charectars (displayed on screen for user convienence). They can then choose to exclude Numbers, Symbols, or Uppercase charectars leaving you with only a random lowercase password.
+The base level of the password will provide a password containing 20 characters with a mix of lowercase, uppercase, numbers, and symbols. The user then has the option to adjust the length between 8 and 128 character (displayed on screen for user convienence). They can then choose to exclude Numbers, Symbols, or Uppercase characters leaving you with only a random lowercase password.
 
 This application features a large generate password button that when clicked returns a password on the screen. It also features a clearly marked and visibly well placed Copy Password button that allows the user to easily copy their new password to the clip board. The user will also receive an Alert when the copy password button is clicked letting them know it is ready to use.
 
