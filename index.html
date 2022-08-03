@@ -22,22 +22,35 @@
       </div>
 
       <!-- password return display field -->
+      <div class="cbtn">
+        <button id="copy">Copy Password</button>
+        </div>
       <div class="card-body">
         <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
 
-
-
 <!-- on screen selection of different variables. Defualt value of 20 characters inputed for user but can be adjusted between 8 and 128 . Copy button-->
-        <button id="copy">Copy Password</button>
-        <label for="length">Length 8-128</label>
-        <input type="number" id="length" value="20" min="8" max="128" />
-        <label for="numbers">Include Numbers</label>
-        <input type="checkbox" id="numbers" checked />
-        <label for="symbols">Include Symbols</label>
-        <input type="checkbox" id="symbols" checked />
+        
+      <div class="options">
+          <div class="sbs">
+          <label for="length">Length 8-128</label>
+          <input type="number" id="length" value="20" min="8" max="128" />
+          </div>
+
+          <div class="sbs">
+          <label for="numbers">Include Numbers</label>
+          <input type="checkbox" id="numbers" checked />
+          </div>
+
+          <div class="sbs">
+            <label for="symbols">Include Symbols</label>
+            <input type="checkbox" id="symbols" checked />
+          </div>
+        
+        <div class="sbs">
         <label for="upper">Include Uppercase</label>
         <input type="checkbox" id="upper" checked />
-
+        </div>
+      </div>
 
 
       </div>
@@ -48,6 +61,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Js file -->
   <script src="Assets/script.js"></script>
 </body>
 

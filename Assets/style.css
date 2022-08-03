@@ -17,6 +17,48 @@ body {
   background-color: #f9fbfd;
 }
 
+/* copy button styling that moves it to the top right of the card */
+.cbtn {
+display: flex;
+justify-content: end;
+margin-top: 1%;
+}
+
+/* options display 4 butttons at full size */
+.options{
+display: inline-block;
+text-align: center;
+}
+
+
+/* display options as buttons turns cursor into a pointer on hover */
+.sbs{
+display: flex;
+flex-direction: row;
+margin: 5px 0px 5px 0;
+width: 45%;
+border: none;
+background-color: hsl(360, 91%, 36%);
+border-radius: 25px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+  0px;
+color: hsl(0, 0%, 100%);
+display: inline-block;
+line-height: 22px;
+padding: 5px 10px;
+cursor: pointer;
+text-align: center;
+}
+
+
+
+
+.sbs :hover {
+cursor: pointer;
+}
+
+
+
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -118,8 +160,11 @@ button[disabled] {
   overflow: hidden;
 }
 
+
+
 @media (max-width: 690px) {
-  .btn {
+  .btn
+  {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
@@ -128,10 +173,48 @@ button[disabled] {
   #password {
     font-size: 1rem;
   }
+
+  /* controls flex direction of options and generate buttons */
+  .options{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin:0; 
+    align-items: center;
+    width: 100%;
+  }
+
+  .sbs{
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+/* adjusts copt button to fit styling of the rest of the page */
+  #copy{
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  /* adjusts header location for small device styling */
+  .card-header{
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
   }
+
+  /* ensures options font does not get to large on smaller screens */
+  .options{
+    font-size: 0.75rem;
+    width: 100%;
+  }
 }
+
+

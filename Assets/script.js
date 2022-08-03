@@ -34,7 +34,7 @@ generateBtn.addEventListener("click", () =>{
 var characters = base;
 incNumbers.checked ? (characters += numbers) : "";
 incUpper.checked ? (characters += upper) : "";
-incNumbers.checked ? (characters += symbols) : "";
+incSymbols.checked ? (characters += symbols) : "";
 passwordText.value = writePassword(length.value, characters);
 });
 
